@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/main_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxEms="14"
+            android:padding="4dp"
+            android:text="U盘文件目录" />
+
+        <TextView
+            android:id="@+id/main_tv_sdFileChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:padding="4dp"
+            android:text="从SD目录选择" />
+
+    </FrameLayout>
+
+    <GridView
+        android:id="@+id/main_gv"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="6dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp" />
+
+    <ScrollView
+        android:id="@+id/main_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/main_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>
